@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>HDU 1213 并查集 | Coding Never Ends</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Coding Never Ends">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/02/20/ftp_mtsd/">虚拟主机FTP上传的MTSD连接超时问题</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/02/13/the-cost-of-reading/">信息的获取成本</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/02/10/HDU1213/">HDU 1213 并查集</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/20/c_structure_pack/">失落的艺术：C 语言结构体封装</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/C-Language/">&nbsp;&nbsp;&nbsp;C Language</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Linux/">&nbsp;&nbsp;&nbsp;Linux</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/OJ/">&nbsp;&nbsp;&nbsp;OJ</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Private-Thinking/">&nbsp;&nbsp;&nbsp;Private Thinking</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/CauT">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2015/02/20/ftp_mtsd/">虚拟主机FTP上传的MTSD连接超时问题</a>
+                
+                    <a  data-pjax href="/2015/02/13/the-cost-of-reading/">信息的获取成本</a>
+                
+                    <a  data-pjax href="/2015/02/10/HDU1213/">HDU 1213 并查集</a>
+                
+                    <a  data-pjax href="/2014/11/20/c_structure_pack/">失落的艺术：C 语言结构体封装</a>
+                
+                
+                
+                    <a data-pjax href="/tags/C-Language/">&nbsp;&nbsp;C Language</a>
+                
+                    <a data-pjax href="/tags/Linux/">&nbsp;&nbsp;Linux</a>
+                
+                    <a data-pjax href="/tags/OJ/">&nbsp;&nbsp;OJ</a>
+                
+                    <a data-pjax href="/tags/Private-Thinking/">&nbsp;&nbsp;Private Thinking</a>
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Coding Never Ends</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">HDU 1213 并查集</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="post-template">-->
+<!---->
+  
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/OJ/' style='color:#D5D5D5'>OJ</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">HDU 1213 并查集</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2015-02-10T06:37:00.000Z"
+                              itemprop="datePublished">2月 10 2015</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <p>这道题是标准的并查集，而且时间上的限制并不严格。严格的时间复杂度要求，必须要求我们控制并查集内部的树的深度。《Algorithm》4th edition中，推荐的是通过比较大小树，来实现简单的控制树高。我觉得，如果在这里采用AVL，肯定是有着最好的表现，但是可能是在实际中，那种树退化为线性表类似的极端情况太过少见，从而做了大小树的简化处理。<br>值得一提的是，如果把table数组的标号从0开始标，就会一直WA，非常之郁闷，改成从1开始就能顺利AC。原因还没想明白。<br>当初看《Algorithm》中的并查集时，始终不能理解其中的深味。直至这个暑假，从头开始研究数据结构以后，才明白其中反复讨论Quick Union和Quick Find算法的异同的出发点，就是在于，组织，修改和查找一群节点的核心思路，就是用树来解决，更为便捷。也正是因此，并查集才在最小生成树问题中有着广泛的应用，无论是prim还是dijkstra算法，都需要并查集的助力，才能有良好的性能表现。</p>
+<figure class="highlight C"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#<span class="keyword">include</span> "stdio.h"</span></div><div class="line"></div><div class="line"><span class="keyword">int</span> size[<span class="number">100000</span>];</div><div class="line"><span class="keyword">int</span> table[<span class="number">100000</span>];</div><div class="line"><span class="keyword">int</span> tableNum;</div><div class="line"></div><div class="line"><span class="keyword">int</span> find(<span class="keyword">int</span> f) {</div><div class="line">    <span class="keyword">while</span> (table[f] != f) {</div><div class="line">        f = table[f];</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> f;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keyword">void</span> toUnion(<span class="keyword">int</span> a, <span class="keyword">int</span> b) {</div><div class="line">    <span class="keyword">int</span> tmpA = find(a);</div><div class="line">    <span class="keyword">int</span> tmpB = find(b);</div><div class="line">    <span class="keyword">if</span> (size[tmpA] &lt; size[tmpB]) {</div><div class="line">        table[tmpA] = tmpB;</div><div class="line">        size[tmpB] = size[tmpA] + size[tmpB]; </div><div class="line">    } <span class="keyword">else</span> {</div><div class="line">        table[tmpB] = tmpA;</div><div class="line">        size[tmpA] = size[tmpA] + size[tmpB];</div><div class="line">    }</div><div class="line">    tableNum--;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keyword">int</span> connected(<span class="keyword">int</span> a, <span class="keyword">int</span> b) {</div><div class="line">    <span class="keyword">if</span> ( find(a) == find(b) )</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keyword">int</span> main()</div><div class="line">{</div><div class="line">    <span class="keyword">int</span> testNum;</div><div class="line">    <span class="keyword">int</span> friendNum;</div><div class="line">    <span class="keyword">int</span> inputNum;</div><div class="line">    <span class="keyword">int</span> tmpA;</div><div class="line">    <span class="keyword">int</span> tmpB;</div><div class="line">    <span class="keyword">int</span> i, j;</div><div class="line"></div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &testNum);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (j=<span class="number">0</span>; j&lt;testNum; j++) {</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &friendNum);</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &inputNum);</div><div class="line">        tableNum = friendNum;</div><div class="line">        <span class="keyword">for</span> (i=<span class="number">1</span>; i&lt;=friendNum; i++) {</div><div class="line">            table[i] = i;</div><div class="line">            size[i] = <span class="number">1</span>;</div><div class="line">        }</div><div class="line">        <span class="keyword">for</span> (i=<span class="number">0</span>; i&lt;inputNum; i++) {</div><div class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &tmpA, &tmpB);</div><div class="line">            <span class="keyword">if</span> (connected(tmpA, tmpB))</div><div class="line">                <span class="keyword">continue</span>;</div><div class="line">            <span class="keyword">else</span></div><div class="line">                toUnion(tmpA, tmpB);</div><div class="line">        }</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, tableNum);</div><div class="line">        getchar();</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">}</div></pre></td></tr></table></figure>
+
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a data-pjax class="newer-posts" href="/2015/02/13/the-cost-of-reading/">← Prev Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2014/11/20/c_structure_pack/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+  
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Coding Never Ends 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+  
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

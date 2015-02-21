@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>虚拟主机FTP上传的MTSD连接超时问题 | Coding Never Ends</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Coding Never Ends">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/02/20/ftp_mtsd/">虚拟主机FTP上传的MTSD连接超时问题</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/02/13/the-cost-of-reading/">信息的获取成本</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/02/10/HDU1213/">HDU 1213 并查集</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/20/c_structure_pack/">失落的艺术：C 语言结构体封装</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/C-Language/">&nbsp;&nbsp;&nbsp;C Language</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Linux/">&nbsp;&nbsp;&nbsp;Linux</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/OJ/">&nbsp;&nbsp;&nbsp;OJ</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Private-Thinking/">&nbsp;&nbsp;&nbsp;Private Thinking</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/CauT">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2015/02/20/ftp_mtsd/">虚拟主机FTP上传的MTSD连接超时问题</a>
+                
+                    <a  data-pjax href="/2015/02/13/the-cost-of-reading/">信息的获取成本</a>
+                
+                    <a  data-pjax href="/2015/02/10/HDU1213/">HDU 1213 并查集</a>
+                
+                    <a  data-pjax href="/2014/11/20/c_structure_pack/">失落的艺术：C 语言结构体封装</a>
+                
+                
+                
+                    <a data-pjax href="/tags/C-Language/">&nbsp;&nbsp;C Language</a>
+                
+                    <a data-pjax href="/tags/Linux/">&nbsp;&nbsp;Linux</a>
+                
+                    <a data-pjax href="/tags/OJ/">&nbsp;&nbsp;OJ</a>
+                
+                    <a data-pjax href="/tags/Private-Thinking/">&nbsp;&nbsp;Private Thinking</a>
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Coding Never Ends</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">虚拟主机FTP上传的MTSD连接超时问题</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="post-template">-->
+<!---->
+  
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/Linux/' style='color:#D5D5D5'>Linux</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">虚拟主机FTP上传的MTSD连接超时问题</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2015-02-20T03:09:00.000Z"
+                              itemprop="datePublished">2月 20 2015</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h3 id="问题描述">问题描述</h3>
+<p>这里给出Mac OS X下的FileZilla的Log：</p>
+<blockquote>
+<p>状态:     正在解析 desgemini.co 的地址<br>状态:     正在连接 157.7.65.33:21…<br>状态:     连接建立，等待欢迎消息…<br>状态:     初始化 TLS 中…<br>状态:     正在验证证书…<br>状态:     TLS connection established.<br>状态:     已连接<br>状态:     读取目录列表…<br>命令:     PWD<br>响应:     257 当前目录是”/“<br>命令:     TYPE I<br>响应:     200 类型设置为I<br>命令:     PASV<br>响应:     227 Entering Passive Mode (157,7,65,33,137,66).<br>命令:     MLSD<br>错误:     无法建立数据连接：ETIMEDOUT - 连接尝试超时</p>
+</blockquote>
+<h3 id="横向测试">横向测试</h3>
+<p>分别测试了如下FTP软件：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">应用软件</th>
+<th style="text-align:center">实测结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">FileZilla 3.8</td>
+<td style="text-align:center">正常</td>
+</tr>
+<tr>
+<td style="text-align:left">FileZilla 3.10.1.1</td>
+<td style="text-align:center">MLSD时超时</td>
+</tr>
+<tr>
+<td style="text-align:left">CyberDuck</td>
+<td style="text-align:center">无法获取目录，估计是MLSD时超时</td>
+</tr>
+<tr>
+<td style="text-align:left">YummyFTP</td>
+<td style="text-align:center">无法获取目录，估计是MLSD时超时</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Google_it!">Google it!</h3>
+<p>Google得到以下几个有切题干货的网址：</p>
+<ol>
+<li><a href="https://www.flashfxp.com/forum/flashfxp/frequently-asked-questions-faq-/13575-list-list-al-mlsd-stat.html" target="_blank" rel="external">https://www.flashfxp.com/forum/flashfxp/frequently-asked-questions-faq-/13575-list-list-al-mlsd-stat.html</a></li>
+<li><a href="http://serverfault.com/questions/224510/unable-to-connect-to-ftp-connection-timeout-after-mlsd" target="_blank" rel="external">http://serverfault.com/questions/224510/unable-to-connect-to-ftp-connection-timeout-after-mlsd</a></li>
+<li><a href="https://trac.cyberduck.io/wiki/help/en/howto/ftp" target="_blank" rel="external">https://trac.cyberduck.io/wiki/help/en/howto/ftp</a></li>
+</ol>
+<h3 id="归纳一下">归纳一下</h3>
+<ol>
+<li>LIST，LIST -al，MLSD，STAT -L几种FTP命令的异同<ol>
+<li>LIST：最普通的列出ftp服务器上的目录，类比ls</li>
+<li>LIST -al：LIST命令带参数，类比ls -al</li>
+<li>MLSD：比较新的FTP命令，提供了更标准，更详细，机器可读性更强的目录信息。</li>
+<li>LIST -L：类似ls -l</li>
+</ol>
+</li>
+<li>MLSD连接超时的原因有很多种，有可能是系统防火墙阻拦，也有可能是路由器的问题，还有可能是主动被动的问题，需要尝试各种可能才能确定。我没能找到解决的方法，因此退而求其次，寻求禁止MLSD，改用LIST的方法。</li>
+<li>Yummy FTP和FileZilla均没有提供禁止MLSD改用LIST的选项，但stackoverflow上喷FileZilla远远比Yummy FTP，这大概是因为开源项目自带使命光环吧。</li>
+<li>CyberDuck将获取ftp目录的设置选项隐藏在Mac OS X user defaults system。需要在terminal中设置，设置命令如下：<ol>
+<li>STAT的开启与关闭：defaults write ch.sudo.cyberduck ftp.command.stat false/true</li>
+<li>LIST -a的开启与关闭：defaults write ch.sudo.cyberduck ftp.command.lista false</li>
+<li>MLSD的开启与关闭：defaults write ch.sudo.cyberduck ftp.command.mlsd false</li>
+</ol>
+</li>
+</ol>
+<p>设置完成后需重启CyberDuck。<br>在禁用了MLSD并开启了LIST后，ftp功能就能正常使用了。</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2015/02/13/the-cost-of-reading/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+  
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Coding Never Ends 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+  
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

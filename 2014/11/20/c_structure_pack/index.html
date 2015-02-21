@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>失落的艺术：C 语言结构体封装 | Coding Never Ends</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Coding Never Ends">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/02/20/ftp_mtsd/">虚拟主机FTP上传的MTSD连接超时问题</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/02/13/the-cost-of-reading/">信息的获取成本</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/02/10/HDU1213/">HDU 1213 并查集</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/20/c_structure_pack/">失落的艺术：C 语言结构体封装</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/C-Language/">&nbsp;&nbsp;&nbsp;C Language</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Linux/">&nbsp;&nbsp;&nbsp;Linux</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/OJ/">&nbsp;&nbsp;&nbsp;OJ</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Private-Thinking/">&nbsp;&nbsp;&nbsp;Private Thinking</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/CauT">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2015/02/20/ftp_mtsd/">虚拟主机FTP上传的MTSD连接超时问题</a>
+                
+                    <a  data-pjax href="/2015/02/13/the-cost-of-reading/">信息的获取成本</a>
+                
+                    <a  data-pjax href="/2015/02/10/HDU1213/">HDU 1213 并查集</a>
+                
+                    <a  data-pjax href="/2014/11/20/c_structure_pack/">失落的艺术：C 语言结构体封装</a>
+                
+                
+                
+                    <a data-pjax href="/tags/C-Language/">&nbsp;&nbsp;C Language</a>
+                
+                    <a data-pjax href="/tags/Linux/">&nbsp;&nbsp;Linux</a>
+                
+                    <a data-pjax href="/tags/OJ/">&nbsp;&nbsp;OJ</a>
+                
+                    <a data-pjax href="/tags/Private-Thinking/">&nbsp;&nbsp;Private Thinking</a>
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Coding Never Ends</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">失落的艺术：C 语言结构体封装</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="post-template">-->
+<!---->
+  
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/C-Language/' style='color:#D5D5D5'>C Language</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">失落的艺术：C 语言结构体封装</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2014-11-20T03:09:00.000Z"
+                              itemprop="datePublished">11月 20 2014</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h3 id="目录">目录</h3>
+<h3 id="1-_谁需要阅读这篇文章">1. 谁需要阅读这篇文章</h3>
+<p>如果你试图写一个内存受限的嵌入式系统或操作系统，你需要了解 C 语言的结构体封装。</p>
+<h3 id="3-_数据对齐的需求">3. 数据对齐的需求</h3>
+<p>C 编译器在内存中放置 C 的基本数据类型的方法是受到限制的，即实现更快的内存访问速度。</p>
+<p>事实上，几乎所有数据类型，除了 char，都有各自的数据对齐的要求。char 类型可以从任何一个位的地址开始读取，但是占2位的 short 类型就需要从偶数位的地址开始读取，占4位的 int 或 short 类型需要从能被4位整除的位地址开始读取，占8位的 long 或者 double 需要从能被8位整除的地址开始读取。</p>
+<h3 id="5-_结构体对齐和空白占位">5. 结构体对齐和空白占位</h3>
+<p>一般来说，一个结构体实例会以其标量成员的最大位宽为默认对齐宽度。编译器通过以上最简单的规则来保证所有结构体成员都是自对齐的，从而实现内存的快速读取。</p>
+<p>同时，在 C 中，结构体的地址和该结构体的首个成员的地址相同，换而言之，并不存在首部的空白占位。值得警惕的是，在 C++中，尽管类与结构体十分相似，然而类的对齐策略与结构体的可能截然不同。（取决于该类是否依赖于他们的父类和虚拟成员函数的实现，并随编译环境的改变而改变）（当你怀疑这些规则的可靠性的时候，ANSI C 提供了一个 offsetof（）宏，用于读取结构体成员的偏移）</p>
+<p>考虑如下结构体：</p>
+<p>假设在一天64位机器上，任何 fool 结构体的实例的对齐宽度都是8位。在内存中放置其中一个结构体的方式并不令人惊讶，如下所示：</p>
+<p>可以看出，结构体中的成员被放置的方式与变量分别声明相比，并没有什么区别。但是，如果我们把 c 放在第一位，那么就会产生区别。</p>
+<p>如果这些结构体成员变量是独立的，c 就可以从任意一个位的边界上开始，空白占位的宽度也随之改变。但是由于 struct foo2 需要对齐他的指针（该指针也是他最大的成员），上述安排就变得不可能。现在 c 是遵从指针对齐的宽度，因而补上了七个空白占位。</p>
+<p>现在让我们来讨论结构体序列中，两两之间的空白占位。要解释这一点，我需要介绍一些基本的概念，我把它称作为结构体宽度地址。这是紧跟在结构体数据后面的第一个地址，存储了相同的对齐的结构体。</p>
+<p>结构体之间的空白占位的一般规则是：编译器会</p>
+<pre><code>    <span class="keyword">struct</span> foo3 {
+        <span class="keyword">char</span> *p;     <span class="comment">/* 8 bytes */</span>
+        <span class="keyword">char</span> c;      <span class="comment">/* 1 byte */</span>
+    };
+
+    <span class="keyword">struct</span> foo3 singleton;
+    <span class="keyword">struct</span> foo3 quad[<span class="number">4</span>];
+</code></pre><p>你也许会认为，<code>siezof(struct foo3)</code>的结果应该是9，然而实际的值是16。位宽地址？？？。因此在一个四元数组中，每个成员的空白占位宽度为7，因为每一个结构体的首个成员变量希望能够自对齐到8位。内存中的分布就像结构体如下图所示搬定义：</p>
+<pre><code><span class="keyword">struct</span> foo3 {
+    <span class="keyword">char</span> *p;     <span class="comment">/* 8 bytes */</span>
+    <span class="keyword">char</span> c;      <span class="comment">/* 1 byte */</span>
+    <span class="keyword">char</span> pad[<span class="number">7</span>];
+};
+</code></pre><p>作为对比，来看下以下这个例子：</p>
+<pre><code><span class="keyword">struct</span> foo4 {
+    <span class="keyword">short</span> s;     <span class="comment">/* 2 bytes */</span>
+    <span class="keyword">char</span> c;      <span class="comment">/* 1 byte */</span>
+};
+</code></pre><p>因为 s 只需要2位对齐，空白占位宽度仅有一位，紧跟在 c 的后面，从而<code>sizeof(struct foo4)</code>会返回4。<br>现在让我们来考虑位域。他们给予你</p>
+<pre><code><span class="keyword">struct</span> foo5 {
+    <span class="keyword">short</span> s;
+    <span class="keyword">char</span> c;
+    <span class="keyword">int</span> flip:<span class="number">1</span>;
+    <span class="keyword">int</span> nybble:<span class="number">4</span>;
+    <span class="keyword">int</span> septet:<span class="number">7</span>;
+};
+</code></pre><h3 id="6-_结构体优化">6. 结构体优化</h3>
+<p>既然你已经知道了编译器在结构体前后插入空白占位的原因和方法，我们将来检验你能够在优化结构体方面做些什么。这就是结构体封装的艺术。</p>
+<p>首先值得注意的是，冗余只在两种情况下出现。第一，存储受较大的数据类型的制约。（在严格的对齐要求下），可以优化数据类型的大小；第二，结构体自然地结束于位宽地址之前，要求放置空白占位，从而下一个结构体可以被正确地对齐。</p>
+<p>减少冗余的最简单的方法是重新排列结构体成员。这就是，将所有的指针对齐的子域放在前面，因为在64位机器中他们是8字节；然后是4字节的 ints；最后是 char。</p>
+<p>所以，举个例子，思考下面这个简单的 linked-list 结构体：</p>
+<pre><code><span class="keyword">struct</span> foo10 {
+    <span class="keyword">char</span> c;
+    <span class="keyword">struct</span> foo10 *p;
+    <span class="keyword">short</span> x;
+};
+</code></pre><p>当我们标出冗余的时候，如下图所示：</p>
+<pre><code><span class="keyword">struct</span> foo10 {
+    <span class="keyword">char</span> c;          <span class="comment">/* 1 byte */</span>
+    <span class="keyword">char</span> pad1[<span class="number">7</span>];    <span class="comment">/* 7 bytes */</span>
+    <span class="keyword">struct</span> foo10 *p; <span class="comment">/* 8 bytes */</span>
+    <span class="keyword">short</span> x;         <span class="comment">/* 2 bytes */</span>
+    <span class="keyword">char</span> pad2[<span class="number">6</span>];    <span class="comment">/* 6 bytes */</span>
+};
+</code></pre><p>总计24字节。如果我们重新按成员变量大小排列，我们得到如下代码：</p>
+<pre><code><span class="keyword">struct</span> foo11 {
+    <span class="keyword">struct</span> foo11 *p; <span class="comment">/* 8 bytes */</span>
+    <span class="keyword">short</span> x;         <span class="comment">/* 2 bytes */</span>
+    <span class="keyword">char</span> c;          <span class="comment">/* 1 byte */</span>
+    <span class="keyword">char</span> pad[<span class="number">5</span>];     <span class="comment">/* 5 bytes */</span>
+};
+</code></pre><p>我们重新封装的过程将结构体大小从24字节降到了16字节，这也许看上去并不多，但是如果我们需要用到一个容量为20万的结构体线性表呢？上述优化所节约的空间将会快速地增长，特别是在嵌入式系统上或者是在常驻的操作系统核心中。</p>
+<p>记住，重新排列并不保证能优化内存占用。如果在上文所提到的<code>struct foo9</code>中应用这项技术，我们将会得到如下代码：</p>
+<pre><code><span class="class"><span class="keyword">struct</span> <span class="title">foo12</span> </span>{
+    <span class="class"><span class="keyword">struct</span> <span class="title">foo12_inner</span> </span>{
+        char *p;      <span class="comment">/* 8 bytes */</span>
+        int x;        <span class="comment">/* 4 bytes */</span>
+    } inner;
+    char c;           <span class="comment">/* 1 byte*/</span>
+};
+</code></pre><p>标注结构体中的空白占位，结果将是：</p>
+<pre><code><span class="keyword">struct</span> foo12 {
+    <span class="keyword">struct</span> foo12_inner {
+        <span class="keyword">char</span> *p;      <span class="comment">/* 8 bytes */</span>
+        <span class="keyword">int</span> x;        <span class="comment">/* 4 bytes */</span>
+        <span class="keyword">char</span> pad[<span class="number">4</span>];  <span class="comment">/* 4 bytes */</span>
+    } inner;
+    <span class="keyword">char</span> c;           <span class="comment">/* 1 byte*/</span>
+    <span class="keyword">char</span> pad[<span class="number">7</span>];      <span class="comment">/* 7 bytes */</span>
+};
+</code></pre><p>其大小仍然是24字节，因为 C 不能被放置于结构体内部的结构体的跟随空白占位。要降低空白占位带来的冗余，你需要重新设计你的数据结构。</p>
+<p>在本篇文章的第一个版本发布后，有人问，为什么重新排列结构体成员变量以优化内存是如此的简单，然而 C 编译器却不去自动完成他。回答是，C 从诞生之初就被设计为用于编写操作系统的语言，和编写其他贴近硬件的代码。自动重排会干扰到一个面向系统的程序员控制结构在内存中的分布的能力，这种结构通常是使用内存映射的设备控制模块，它们对字节级别和位级别的匹配有着极其严格的要求。</p>
+<h3 id="7-_笨拙标量的例子">7. 笨拙标量的例子</h3>
+<p>用枚举类型来代替<code>#define</code>是一个好主意，只要</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a data-pjax class="newer-posts" href="/2015/02/10/HDU1213/">← Prev Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+  
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Coding Never Ends 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+  
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
